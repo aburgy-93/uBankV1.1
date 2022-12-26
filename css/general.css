@@ -1,0 +1,120 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights:
+Default: 400
+light: 300
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights:
+Default: 
+Medium: 
+Small: 
+Paragraph default: 
+
+- LETTER SPACING
+
+
+--- 02 COLORS
+
+- Primary: #0ce7b0;
+- Tints: #0ce7b0,
+- Shades: #00c7b3,#00a6ab
+- Accents: 
+- Greys: 
+
+#555
+
+
+
+--- 03 Imgs: unsplash, uifaces(headshots)
+
+--- 04 Icons:
+
+--- 05 SHADOWS: 
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADUIS
+
+Default: 9px
+11px
+
+--- 07 WHITESPACE
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+:root {
+  --color-primary: #0ce7b0;
+  --gradient-primary: linear-gradient(
+    to right bottom,
+    #0ce7b0,
+    #00c7b3,
+    #00a6ab
+  );
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+
+  background: var(--gradient-primary);
+  height: 100vh;
+}
+
+html,
+body {
+  overflow: visible;
+}
+
+.ubank-UI {
+  background-color: #fff;
+  margin: 6.4rem 6.4rem;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}

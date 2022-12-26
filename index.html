@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>uBank | A Bank Made for You</title>
+
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+  </head>
+  <body>
+    <div class="ubank-UI">
+      <header class="header">
+        <nav class="header-nav">
+          <ul class="header-nav-left">
+            <li>
+              <a href="#" class="main-nav-link">Locations</a>
+            </li>
+            <li>
+              <a href="#" class="main-nav-link">Business</a>
+            </li>
+            <li>
+              <a href="#" class="main-nav-link">(877) 867-5309</a>
+            </li>
+            <li>
+              <a href="#" class="main-nav-link">US Flag</a>
+            </li>
+            <li>
+              <a href="#" class="main-nav-link">EU Flag</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <nav class="user-nav-bar">
+        <a href="#">
+          <img src="" alt="uBank Logo" />
+        </a>
+        <ul class="user-nav-list">
+          <li>
+            <a class="user-nav-link" href="#">Accounts</a>
+          </li>
+          <li>
+            <a class="user-nav-link" href="#">Loans</a>
+          </li>
+          <li>
+            <a class="user-nav-link" href="#">Cards</a>
+          </li>
+          <li>
+            <a class="user-nav-link" href="#">Invest</a>
+          </li>
+          <li>
+            <a class="user-nav-link" href="#">Digital</a>
+          </li>
+          <li>
+            <a class="user-nav-link" href="#">Log In</a>
+          </li>
+        </ul>
+      </nav>
+
+      <main>
+        <section class="section-hero">
+          <div class="hero">
+            <div class="hero-text-box">
+              <h1 class="heading-primary">
+                <!-- Change Later -->
+                New Bank For
+                <br />
+                A New Age
+              </h1>
+              <p class="hero-description">
+                <!-- change later -->
+                A banking expierence where you are in control.
+              </p>
+              <button class="btn--text btn--scroll-to">
+                Learn more &DownArrow;
+              </button>
+            </div>
+
+            <div class="hero-img-box">
+              <img
+                src="images/online_banking.jpg"
+                alt="Banking for you img"
+                class="header__img"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="features">
+          <div class="container">
+            <span class="subheading">Features</span>
+            <h2 class="heading-secondary">
+              Everything you need in a modern bank and more
+            </h2>
+          </div>
+
+          <div class="container grid grid--2-cols">
+            <!-- Feature 1 -->
+            <div class="feature-text-box">
+              <p class="feature-title">Feature 1</p>
+              <h3 class="heading-secondary">Sentence about Feature 1</h3>
+              <p class="feature-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
+                dignissimos dolores laboriosam veniam delectus officiis, ad
+                possimus temporibus, neque modi distinctio ab accusantium
+                molestiae! Dicta sit officiis mollitia. Recusandae, dolore!
+              </p>
+            </div>
+            <div class="feature-img-box">
+              <img
+                class="feature-img"
+                src="images/computer.jpg"
+                alt="Wide screen computer on a wooden plank "
+              />
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-img-box">
+              <img
+                class="feature-img"
+                src="images/graph.jpg"
+                alt="Wide screen computer on a wooden plank "
+              />
+            </div>
+            <div class="feature-text-box">
+              <p class="feature-title">Feature 2</p>
+              <h2 class="heading-secondary">Sentence about Feature 2</h2>
+              <p class="feature-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
+                dignissimos dolores laboriosam veniam delectus officiis, ad
+                possimus temporibus, neque modi distinctio ab accusantium
+                molestiae! Dicta sit officiis mollitia. Recusandae, dolore!
+              </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-text-box">
+              <p class="feature-title">Feature 3</p>
+              <h3 class="heading-secondary">Sentence about Feature 3</h3>
+              <p class="feature-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
+                dignissimos dolores laboriosam veniam delectus officiis, ad
+                possimus temporibus, neque modi distinctio ab accusantium
+                molestiae! Dicta sit officiis mollitia. Recusandae, dolore!
+              </p>
+            </div>
+            <div class="feature-img-box">
+              <img
+                class="feature-img"
+                src="images/credit_card.webp"
+                alt="Wide screen computer on a wooden plank "
+              />
+            </div>
+          </div>
+        </section>
+
+        <div class="operations">
+            <div class="operations__tab-container">
+              <button
+                class="btn operations__tab operations__tab--1 operations__tab--active"
+                data-tab="1"
+              >
+                <span>01</span>Instant Transfers
+              </button>
+              <button
+                class="btn operations__tab operations__tab--2"
+                data-tab="2"
+              >
+                <span>02</span>Instant Loans
+              </button>
+              <button
+                class="btn operations__tab operations__tab--3"
+                data-tab="3"
+              >
+                <span>03</span>Instant Closing
+              </button>
+            </div>
+            <div
+              class="operations__content operations__content--1 operations__content--active"
+            >
+              <div class="operations__icon operations__icon--1">
+                <img src="images/svg/export-variant.png" alt="" />
+              </div>
+              <h5 class="operations__header">
+                Tranfser money to anyone, instantly! No fees, no BS.
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+
+            <div class="operations__content operations__content--2">
+              <div class="operations__icon operations__icon--2">
+                <img src="images/svg/cash-fast.png" alt="" />
+              </div>
+              <h5 class="operations__header">
+                Buy a home or make your dreams come true, with instant loans.
+              </h5>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+
+            <div class="operations__content operations__content--3">
+              <div class="operations__icon operations__icon--3">
+                <img src="images/svg/close-octagon.png" alt="" />
+              </div>
+              <h5 class="operations__header">
+                No longer need your account? No problem! Close it instantly.
+              </h5>
+              <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
