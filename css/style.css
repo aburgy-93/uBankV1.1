@@ -70,3 +70,107 @@ body {
   font-weight: 400;
   color: #555;
 }
+
+/*********************************/
+/* GENERAL/REUSEABLE */
+/*********************************/
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/*********************************/
+/* SECTION HEADER */
+/*********************************/
+
+.section-header {
+  background-color: #555;
+  padding: 3.2rem 3.2rem;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav-left,
+.header-nav-right {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  /* color: #0ce7b0; */
+  color: #00a6ab;
+}
+
+/*********************************/
+/* USER NAV BAR */
+/*********************************/
+
+.user-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6.4rem 6.4rem;
+  background-color: #fff;
+  width: 75%;
+
+  /* Temporary??? */
+  padding: 3.6rem;
+  height: 10rem;
+
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+  position: absolute;
+  z-index: 1000;
+
+  top: 10%;
+  right: 10%;
+}
+
+.logo {
+  height: 8.4rem;
+}
+
+.user-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 3.2rem;
+}
+
+.user-nav-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+/*********************************/
+/* SECTION HERO */
+/*********************************/
+
+.section-hero {
+  position: relative;
+  background-color: #e7fdf7;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
