@@ -24,7 +24,7 @@ Paragraph default:
 
 - Primary: #0ce7b0;
 - Tints: #0ce7b0,
-- Shades: #00c7b3,#00a6ab
+- Shades: #00c7b3,#00a6ab, #00959a;
 - Accents: 
 - Greys: 
 
@@ -128,19 +128,11 @@ body {
   justify-content: space-between;
   margin: 6.4rem 6.4rem;
   background-color: #fff;
-  width: 75%;
-
-  /* Temporary??? */
+  width: 74%;
+  grid-column: 1/ -1;
   padding: 3.6rem;
   height: 10rem;
-
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-
-  position: absolute;
-  z-index: 1000;
-
-  top: 10%;
-  right: 10%;
 }
 
 .logo {
@@ -165,12 +157,45 @@ body {
 /*********************************/
 
 .section-hero {
-  position: relative;
   background-color: #e7fdf7;
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 0rem 0 4.8rem 0;
 }
 
 .hero {
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 0 3.2;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  column-gap: 9.2rem;
+}
+
+.hero-text-box h1 {
+  padding-top: 4.8rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 3.2rem;
+}
+
+.hero-img-box img {
+  padding-top: 3.6rem;
+  height: 30rem;
+  width: 40rem;
+}
+
+/*********************************/
+/* SECTION FEATURED */
+/*********************************/
+
+/*********************************/
+/* SECTION FEATURED */
+/*********************************/
+
+.section-features {
+  padding: 9.6rem 0;
 }
