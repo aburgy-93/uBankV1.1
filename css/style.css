@@ -189,7 +189,7 @@ body {
 }
 
 /*********************************/
-/* SECTION FEATURED */
+/* SECTION FEATURED-IN */
 /*********************************/
 
 /*********************************/
@@ -198,4 +198,27 @@ body {
 
 .section-features {
   padding: 9.6rem 0;
+}
+
+.feature-img {
+  width: 100%;
+}
+
+.feature-title {
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+.feature-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.features--icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 2.4rem;
 }

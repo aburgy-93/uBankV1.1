@@ -80,12 +80,27 @@ body {
   overflow-x: hidden;
 
   background: var(--gradient-primary);
-  height: 100vh;
+  height: 100%;
 }
 
 html,
 body {
   overflow: visible;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .ubank-UI {

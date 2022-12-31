@@ -1,0 +1,222 @@
+1) Define
+    -Define who the website is for. Is it for yourself? For a client of your agency or your freelancing business?
+    -Define what the website is for. In other words, define business and user goals of your website project.
+    -Ex:
+        -Business goal example: Selling premium dog food
+        -User goal example: Finding high-quality dog food for a good price
+    Define a target audience. Be really specific if possible and if it makes sense for your website (this can come from your client)
+    -Ex: 
+        -"Women, 20 to 40 years old, living in Europe, earning over $2000/month, with a passion for dogs"
+    
+2) Plan
+    -Plan and gather website content: copy (text), images, videos, ect.
+    -Content is usually provided by the client, but you also can help them produce and find some content (simply finding free images is easiest, but if they want copy, charge them extra)
+    -For bigger sites, plan out the sitemap: what pages the site needs, and how they are related to another (content hierarchy)
+    -Based on the content, plan what sections each page needs in order to convey the content's message, and in which order.
+    -Define the website personality (see web design section)
+3) Sketch
+    -Think about what components you need, and how can you use them in layout patterns (get inspiration in web design section)
+    -Get ideas out of your head: sketch them with pen and paper or with some design software (Figma)
+    -This is an iterative process: experiment with different components and layouts, until you arrive at a first good solution
+    -No need to sketch everything, and don't make it perfect. At some point, you're ready to jump into HTML and CSS
+4) Design and Build
+    -Use decisions, content and sketches from Steps 1, 2, and 3 to design and buil the website with HTML and CSS ("designing in the browser")
+    -You already have the layout and components that you selected in Step 3. In this step, you need to design the actual visual styles
+    -Create the design based on selected website personality, the design guidelines I showed you, and inspiration (see web design section)
+    -Use the clients' branding (it if exists already) for design decisions whenever possible: colors, typography, icons, ect.
+5) Test and Optimize
+    -Make sure websites works well in all major browsers.
+    -Test the website on actual mobile devices, not just in DevTools
+    -Optimize all images, in terms of dimensions and file size
+    -Fix simple accessibility problems
+    -Run the Lighthouse performance test in Chrome DevTools and try to fix reported issues
+    -Think about SEO
+6) Launch
+    -Once all work is done, everything is prefect, and you got approval from your client (or yourself), it's time to share your masterpiece with the world!
+    -Upload your website to a hosting platform. We will use Netlify
+    -Choose and buy a great domain name, one that represents the brand well, is memerable and easy to write. 
+7) Maintain and Update
+    -Launching is not the end.
+    -Keep the website content update over time. If you're working with a client, you can create a monthly maintenance contract.
+    -Install analytics software (Google Analytics or Fathom) to get statistics about website users. This may inform future changes in the site structure and content.
+    -A blog that is updated regul
+    
+----------------------------------------------------------------------------------
+
+Step 1: Defien the Project
+
+Define WHO the website is for
+-for a client
+
+Define WHAT the website is for
+-Business goal: selling a monthly food sub
+-Eating well effortlessly, without spending a lot of time and money
+
+Defire target audience
+-Busy people who like technology, are interestd in a healthy diet, and have a well-paying job
+
+Step 2: Plan the Project:
+
+Define website personality:
+-Based on the tech-centered target audence, as well as the actual product
+being sold, we will use the startup/upbeat personality. We might add some
+elements of the calm/peaceful personality, since the product is all about
+consumer well-being as well
+
+Step 3: Sketching initial layout ideas"
+
+Step 4: First Design and Development Steps:
+
+----------------------------------------------------------------------------------
+
+Responsive Design Principles:
+
+Design technique to make a webpage adjust its layout and visual style to any possible screen size (window or viewport size).
+In practice, this means that responsive design makes websites usable on all devices, such as desktops, tablets, and phones.
+It's a set of practices, not a seperate tech.
+
+Ingredients:
+
+--- 01 FLUID LAYOUTS
+- To allow webpage to adapt to the current viewport width (or even height)
+- Use % (or vh/vw) unit instead of px for elements that should adapt to viewport (usually layout)
+- Use max-width instead of width
+
+--- 02 RESPONSIVE UNITS
+- Use rem unit instead of px for most length
+- To make it easy to scale the entire layout down (or up) automatically 
+- Helpful trick: setting 1rem to 10px for easy calculations
+
+--- 03 FLEXIBLE IMAGES
+- By default, images don't scale automatically as we change the viewport, so we need to fix that
+- Always use % for image dimensions, together with the max-width property
+
+--- 04 MEDIA QUERIES 
+- Bring responsive sites to life!
+-To change CSS styles on certain viewport widths (called breakpoints)
+
+
+Desktop-First vs Mobile-First development:
+
+--- 01 DESKTOP FIRST
+- start writing CSS for the desktop: large screen
+- Then, media quiries shrink design to smaller screens
+
+--- 02 MOBILE FIRST
+- Start writing CSS for mobile devices: small screen
+- Then, media quiries expand design to large screen
+- Forces us to reduce websites and apps to the absolute essentials 
+
+----------------------------------------------------------------------------------
+
+How rem and max-width work:
+if the container width is larger than the specified max width, then the width of the element is equal to the value that is specified for max-width. However, if the container width is less than the specified max-width then the width of the element will be 100% of the container element width 
+
+REM: root element font size
+
+elements -> components -(patternts)-> Layouts -> webpage
+
+1) use common elements and components to convey your webssite's information
+2) combine components into layout using common layout patternts
+3) Assemble dofferent layout areas into a complete, final page. 
+
+Elements:
+- Text
+- Buttons
+- Images
+- Input elements
+- Tags
+
+Compontents: 
+- Breadcrumbs: used to help user navagate a complex site (home, main, ect)
+- Pagination
+- Alert and status Breadcrumbs: show something new has happened or some action took place
+- Stats
+- Gallery 
+- Feature box: groups together info about a product.
+- Preview and profile cards 
+- Accordion: hiding info until user clicks on it, then shows the content
+- Tabs 
+- Carousel 
+- Customer testimonials
+- Customer logos
+- Featured-in logos
+- Steps
+- Forms
+- Tables
+- Pricing Tables
+- Modal windows
+
+Section Compontents: 
+- Navigation
+- Hero secetion
+- Footer
+- Call-to-action Section
+- Feature row
+
+Layout Patterns:
+- Rows of boxes or cards
+- Grid of boxes or cards
+- Z-pattern
+- F-pattern
+- Single column
+- Sidebar
+- Multi-column/magazine
+- Asymmetry/experimental
+
+Text:
+
+
+// Section Components //
+
+Navigation
+- Nav bar
+- Drop down menu 
+
+Hero Section
+- Style 1: An image on one side and text on the other. 
+- Style 2: to have a background image with some text on top. 
+- Style 3: to first have some text, and below that some image.
+
+Footer
+- Sidemap of website in footer 
+- Submit form for newletter?
+
+Call-to-action
+- Free trial submition
+- Social proof used
+- Contact information 
+
+Feature row
+- picture, some text, maybe a button to go to a section 
+
+// Layout Pattern //
+1) Row of boxes/cards
+2) Grid of boxes/cards 
+- Nesting patterns in components (mix and match component(s))
+3) Z-Pattern, repeating feature rows with different directions, 3 rows often used
+4) F- Pattern, repeating more horizontal rows, with no alternation of components
+5) Single column pattern, ex: blog post
+6) Sidebar pattern
+7) Multi-column/Magazine 
+8) Asymmetry/Experimental 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Website Personalities:
+
+01. Serious/Elegant: For luxury and elegance, based on thin serif typefaces,
+golden or pastel colors, and big high-quality images.
+02. Minimalist/Simple: Focusses on the essential text content, using small or
+medium-sized sans-serif black text, lines, and few images and icons.
+03. Plain/Neutral: Design that gets out of the way by using neutral and small
+typefaces, and a very structured layout. Common in big corporations.
+04. Bold/Confident: Makes an impact, by featuring big and bold typography,
+paired with confident use of big and bright colored blocks.
+05. Calm/Peaceful: For products and services that care, transmitted by
+calming pastel colors, soft serif headings, and matching
+images/illustrations.
+06. Startup/Upbeat: Widely used in startups, featuring medium-sized sans-
+serif typefaces, light-grey text and backgrounds, and rounded elements.
+07. Playful/Fun: Colorful and round designs, fueled by creative elements like
+hand-drawn icons or illustrations, animations, and fun language.
