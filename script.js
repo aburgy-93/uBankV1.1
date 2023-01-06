@@ -1,5 +1,4 @@
-const header = document.querySelector(".header");
-const nav = document.querySelector(".header-nav");
+const nav = document.querySelector(".user-nav-bar");
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const closeModalBtn = document.querySelector(".btn--close-modal");
@@ -157,17 +156,22 @@ btnLearnMore.addEventListener("click", function (e) {
 // Observer //
 
 const navHeight = nav.getBoundingClientRect().height;
+console.log(navHeight);
+const sectionHero = document.querySelector(".section-hero");
 
 const stickyNav = function (entries, observer) {
   const [entry] = entries;
+  console.log(entry);
 
   if (!entry.isIntersecting) {
     nav.classList.add("sticky");
+    console.log("sticky");
 
-    btnToTop.style.display = "block";
+    // btnToTop.style.display = "block";
   } else {
     nav.classList.remove("sticky");
-    btnToTop.style.display = "none";
+    // btnToTop.style.display = "none";
+    console.log("not sticky");
   }
 };
 
@@ -179,7 +183,7 @@ const options = {
 
 const observer = new IntersectionObserver(stickyNav, options);
 
-observer.observe(header);
+observer.observe(sectionHero);
 
 // Lazy Loading Images //
 const imgTargets = document.querySelectorAll("img[data-src]");
@@ -210,7 +214,7 @@ const allSections = document.querySelectorAll(".section");
 
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
+  // console.log(entry);
 
   if (!entry.isIntersecting) return;
 
