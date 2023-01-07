@@ -178,11 +178,22 @@ body {
   width: 40rem;
 }
 
-/* nav and stickly class at the same time */
-.user-nav-bar.sticky {
+.sticky .user-nav-bar {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.95);
+  top: 0;
+  bottom: 0;
+  /* width: auto; */
+  height: 9rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.975);
   z-index: 1000;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  margin: 0;
+}
+
+.sticky .hero {
+  margin-top: 25rem;
 }
 
 /*********************************/
@@ -252,10 +263,13 @@ body {
 /* SECTION OPERATIONS */
 /*********************************/
 
+.section-operations {
+  background-color: #e7fdf7;
+}
+
 .operations {
   margin: 0rem auto 0 auto;
-
-  background-color: rgba(204, 237, 238, 0.25);
+  background-color: #fff;
 }
 
 .operations__tab-container {

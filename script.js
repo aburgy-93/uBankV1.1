@@ -164,21 +164,28 @@ const stickyNav = function (entries, observer) {
   console.log(entry);
 
   if (!entry.isIntersecting) {
-    nav.classList.add("sticky");
-    console.log("sticky");
-
-    // btnToTop.style.display = "block";
+    document.body.classList.add("sticky");
   } else {
-    nav.classList.remove("sticky");
-    // btnToTop.style.display = "none";
-    console.log("not sticky");
+    document.body.classList.remove("sticky");
   }
+
+  // if (!entry.isIntersecting) {
+  //   nav.classList.add("sticky");
+  //   console.log("sticky");
+
+  //   // btnToTop.style.display = "block";
+  // } else {
+  //   nav.classList.remove("sticky");
+  //   // btnToTop.style.display = "none";
+  //   console.log("not sticky");
+  // }
 };
 
 const options = {
   root: null,
   threshold: 0,
-  rootMargin: `-${navHeight}px`,
+  // rootMargin: `-${navHeight}px`,
+  rootMargin: `-95px`,
 };
 
 const observer = new IntersectionObserver(stickyNav, options);
