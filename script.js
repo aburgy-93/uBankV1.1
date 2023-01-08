@@ -183,9 +183,9 @@ const stickyNav = function (entries, observer) {
 
 const options = {
   root: null,
-  threshold: 0,
+  threshold: 0.1,
   // rootMargin: `-${navHeight}px`,
-  rootMargin: `-95px`,
+  rootMargin: `-80px`,
 };
 
 const observer = new IntersectionObserver(stickyNav, options);
