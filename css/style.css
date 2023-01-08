@@ -107,6 +107,11 @@ body {
   color: #0bd09e;
 }
 
+.flag {
+  height: 4rem;
+  width: 4rem;
+}
+
 /*********************************/
 /* USER NAV BAR */
 /*********************************/
@@ -621,9 +626,9 @@ body {
 /*********************************/
 
 .section--sign-up {
-  background-color: #37383d;
+  background-color: #fff;
   border-top: none;
-  border-bottom: 1px solid #444;
+  /* border-bottom: 1px solid #444; */
   text-align: center;
   padding: 10rem 3rem;
 }
@@ -647,42 +652,85 @@ body {
 /*********************************/
 
 .footer {
-  padding: 10rem 3rem;
-  background-color: #37383d;
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+  /* background-color: rgba(231, 253, 247, 0.5); */
+  /* background-color: #55eec8; */
+  background-color: #555;
 }
 
-.footer__nav {
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
   list-style: none;
   display: flex;
-  justify-content: center;
-  margin-bottom: 5rem;
+  gap: 2.4rem;
 }
 
-.footer__item {
-  margin-right: 4rem;
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
 }
 
-.footer__link {
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  /* TEMPORARY */
+  /* color: #767676; */
+  color: #fff;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+.contacts {
+  font-style: normal;
   font-size: 1.6rem;
-  color: #eee;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+  color: #fff;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.footer-link:link,
+.footer-link:visited {
   text-decoration: none;
+  font-size: 1.6rem;
+  /* color: #767676; */
+  color: #fff;
+  transition: all 0.3s;
 }
 
-.footer__logo {
-  height: 5rem;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 5rem;
-}
-
-.footer__copyright {
-  font-size: 1.4rem;
-  color: #aaa;
-  text-align: center;
-}
-
-.footer__copyright .footer__link {
-  font-size: 1.4rem;
+.footer-link:hover,
+.footer-link:active {
+  color: #ddd;
 }
 
 /*********************************/
