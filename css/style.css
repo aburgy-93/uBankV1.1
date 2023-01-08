@@ -140,12 +140,13 @@ body {
   color: #000;
   font-weight: 400;
   font-size: 1.8rem;
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 
 .user-nav-link:hover,
 .user-nav-link:active {
-  color: #0bd09e;
+  border-bottom: 2px solid #0bd09e;
+  /* color: #0bd09e; */
 }
 
 .user-nav-link.nav-cta:link,
@@ -166,7 +167,7 @@ body {
 /*********************************/
 
 .section-hero {
-  background-color: #e7fdf7;
+  background-color: rgba(231, 253, 247, 0.5);
   padding: 0rem 0 4.8rem 0;
 }
 
@@ -325,11 +326,11 @@ body {
 
 .section-operations {
   padding: 9.6rem 0;
-  background-color: #e7fdf7;
+  background-color: rgba(231, 253, 247, 0.5);
 }
 
 .operations {
-  margin: 0rem auto 0 auto;
+  margin: 0 auto 0 auto;
   background-color: #fff;
 }
 
@@ -395,6 +396,12 @@ body {
   align-self: center;
 }
 
+.operations-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
 .operations__icon {
   display: flex;
   align-items: center;
@@ -437,11 +444,12 @@ body {
 }
 
 /*********************************/
-/* SLIDER */
+/* SECTION TESTIMONIALS */
 /*********************************/
 
 .section-slider {
   padding: 9.6rem 0;
+  background-color: rgba(231, 253, 247, 0.5);
 }
 
 .slider {
@@ -456,10 +464,11 @@ body {
 
 .slide {
   position: absolute;
+  background-color: #fff;
   top: 0;
   width: 100%;
   height: 50rem;
-
+  /* margin: 0rem 0rem 0rem 0rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -481,7 +490,7 @@ body {
   z-index: 10;
 
   border: none;
-  background: rgba(255, 255, 255, 0.7);
+  background-color: rgba(231, 253, 247, 0.8);
   font-family: inherit;
   color: #333;
   border-radius: 50%;
@@ -496,13 +505,23 @@ body {
 }
 
 .slider__btn--left {
-  left: 6%;
+  left: 9%;
   transform: translate(-50%, -50%);
+}
+
+.slider__btn--left:hover,
+.slider__btn--left:active {
+  background-color: rgba(206, 250, 239, 0.8);
 }
 
 .slider__btn--right {
   right: 6%;
   transform: translate(50%, -50%);
+}
+
+.slider__btn--right:hover,
+.slider__btn--right:active {
+  background-color: rgba(206, 250, 239, 0.8);
 }
 
 .dots {
@@ -537,10 +556,6 @@ body {
   background-color: #888;
   opacity: 1;
 }
-
-/*********************************/
-/* SECTION TESTIMONIALS */
-/*********************************/
 
 .testimonial {
   width: 65%;
