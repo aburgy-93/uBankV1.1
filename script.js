@@ -13,6 +13,30 @@ const navLinks = document.querySelector(".main-nav-link");
 const section1 = document.querySelector("#section--1");
 const btnLearnMore = document.querySelector(".btn--scroll-to");
 
+const links = document.querySelectorAll("li a");
+
+// doesn't work now????
+
+links.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    let href = link.getAttribute("href").split("#")[1];
+    console.log(href);
+
+    let elementTarget = document.getElementById(href);
+    console.log(elementTarget);
+
+    if (href !== "") {
+      elementTarget.scrollIntoView({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
+  });
+});
+
 // Tabs content //
 tabsContainer.addEventListener("click", function (e) {
   const clicked = e.target.closest(".operations__tab");
