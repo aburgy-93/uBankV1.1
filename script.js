@@ -14,6 +14,7 @@ const section1 = document.querySelector("#section--1");
 const btnLearnMore = document.querySelector(".btn--scroll-to");
 
 const links = document.querySelectorAll("li a");
+console.log(links);
 
 // doesn't work now????
 

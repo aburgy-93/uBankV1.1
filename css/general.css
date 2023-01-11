@@ -158,6 +158,15 @@ body {
   margin-bottom: 3.2rem;
 }
 
+.spacing {
+  font-size: 6.2rem;
+}
+
+.background {
+  background-color: #0ce7b0;
+  color: #fff;
+}
+
 .subheading {
   display: block;
   font-size: 1.6rem;
