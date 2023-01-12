@@ -232,3 +232,20 @@ body {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(12, 231, 176, 0.5);
 }
+
+.section {
+  /* padding: 15rem 3rem;
+  border-top: 1px solid #ddd; */
+
+  transition: trasform 1s, opacity 1s;
+}
+
+.section--hidden {
+  transform: translateY(8rem);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.lazy-img {
+  filter: blur(20px);
+}

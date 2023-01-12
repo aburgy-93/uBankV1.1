@@ -7,36 +7,38 @@ const tabs = document.querySelectorAll(".operations__tab");
 const tabsContainer = document.querySelector(".operations__tab-container");
 const tabsContent = document.querySelectorAll(".operations__content");
 
-const navLinks = document.querySelector(".main-nav-link");
+// const navLinks = document.querySelector(".main-nav-link");
+const links = document.querySelector(".user-nav-list");
+
+// Section into view //
 
 // Button scrolling //
 const section1 = document.querySelector("#section--1");
 const btnLearnMore = document.querySelector(".btn--scroll-to");
 
-const links = document.querySelectorAll("li a");
-console.log(links);
+// PAGE NAVIGACTIN //
 
-// doesn't work now????
+links.addEventListener("click", function (e) {
+  e.preventDefault();
 
-links.forEach((link) => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
+  if (e.target.classList.contains("user-nav-link")) {
+    const id = e.target.getAttribute("href");
 
-    let href = link.getAttribute("href").split("#")[1];
-    console.log(href);
-
-    let elementTarget = document.getElementById(href);
-    console.log(elementTarget);
-
-    if (href !== "") {
-      elementTarget.scrollIntoView({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
-    }
-  });
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  }
 });
+
+// Page Navigation //
+// navLinks.addEventListener("click", function (e) {
+//   e.preventDefault();
+
+//   // Matching strategy
+//   if (e.target.classList.contains("nav__link")) {
+//     const id = e.target.getAttribute("href");
+
+//     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+//   }
+// });
 
 // Tabs content //
 tabsContainer.addEventListener("click", function (e) {
@@ -70,18 +72,6 @@ btnOpenModal.forEach((btn) => {
 closeModalBtn.addEventListener("click", function () {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
-});
-
-// Page Navigation //
-navLinks.addEventListener("click", function (e) {
-  e.preventDefault();
-
-  // Matching strategy
-  if (e.target.classList.contains("nav__link")) {
-    const id = e.target.getAttribute("href");
-
-    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-  }
 });
 
 // Slider //
@@ -186,24 +176,12 @@ const sectionHero = document.querySelector(".section-hero");
 
 const stickyNav = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
 
   if (!entry.isIntersecting) {
     document.body.classList.add("sticky");
   } else {
     document.body.classList.remove("sticky");
   }
-
-  // if (!entry.isIntersecting) {
-  //   nav.classList.add("sticky");
-  //   console.log("sticky");
-
-  //   // btnToTop.style.display = "block";
-  // } else {
-  //   nav.classList.remove("sticky");
-  //   // btnToTop.style.display = "none";
-  //   console.log("not sticky");
-  // }
 };
 
 const options = {
